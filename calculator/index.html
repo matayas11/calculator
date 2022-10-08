@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/8dbd72d53e.js" crossorigin="anonymous"></script>
+    
+  
+  </head>
+
+  <body>
+<div>
+ <!--nav bar start-->
+ 
+ <nav class="navbar navbar-expand-lg fix bg-light" id="navbar_top">
+  <div class="container-fluid">
+    <a class="navbar-brand"  href="#"  ><img src="rocket.png" alt=""> Calculator</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#space" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cal">Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#download">Download</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class=" container d-flex ">
+
+  <p class="d-flex" id="space">Space Calculator </p>
+  
+ <img src="astro.png"  id="astro" class="d-flex">
+
+</div>
+<div class="container d-flex" >
+  <p id="text">The purpose of Space calculator is to do correct calculations, and to do so efficiently. It is clear that a calculator should relieve the user of the need to do mental operations and of the need to rely on paper, so far as possible.</p>
+</div>
+
+
+
+
+
+<center>
+<div class="container d-flex justify-content-center" id="cal">
+
+    <table class="calculator" >
+    
+      <tr>
+        <td colspan="4"> <input class="display-box" type="text" id="result" disabled /> </td>
+      
+      </tr>
+  
+      <tr>
+        <!-- display() function displays the value of clicked button -->
+        <td> <input type="button" value="1" onclick="display('1')" /> </td>
+        <td> <input type="button" value="2" onclick="display('2')" /> </td>
+        <td> <input type="button" value="3" onclick="display('3')" /> </td>
+        <td> <input type="button" value="*" onclick="display('*')" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" value="4" onclick="display('4')" /> </td>
+        <td> <input type="button" value="5" onclick="display('5')" /> </td>
+        <td> <input type="button" value="6" onclick="display('6')" /> </td>
+        <td> <input type="button" value="/" onclick="display('/')" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" value="7" onclick="display('7')" /> </td>
+        <td> <input type="button" value="8" onclick="display('8')" /> </td>
+        <td> <input type="button" value="9" onclick="display('9')" /> </td>
+        <td> <input type="button" value="+" onclick="display('+')" /> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" value="." onclick="display('.')" /> </td>
+        <td> <input type="button" value="0" onclick="display('0')" /> </td>
+     
+   
+
+        <!-- clearScreen() function clears all the values -->
+  <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+  <td> <input type="button" value="-" onclick="display('-')" /> </td>
+      </tr>
+      
+<tr>
+       <!-- calculate-->
+       <td colspan="4" class="equal "> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+       
+</tr>
+
+    </table>
+     
+  </div>
+</center>
+
+
+
+
+
+<!--about section-->
+
+<div class="container " id="about">
+  <div class="row">
+   <h1 >About Us</h1>
+    
+    <div class="col"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident vitae consectetur nesciunt. Architecto consequatur corrupti obcaecati ea maiores, minus exercitationem, doloribus ipsum ad voluptatibus tempora iste. Debitis, corrupti quod?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quod ex quisquam pariatur odit illo culpa reiciendis at provident nobis nam labore error itaque modi possimus, id praesentium, quasi voluptate!</p>
+     
+    </div>
+    <div class="col"><img class="rocket launch" src="https://cdn4.iconfinder.com/data/icons/whsr-january-flaticon-set/512/rocket.png">
+    </div>
+
+    <div class="col"> 
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              What is Calculator?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+               a device for performing mathematical calculations, esp an electronic device that can be held in the hand. a person or thing that calculates. a set of tables used as an aid to calculations.
+              </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+             What is the accuracy of the space calculator?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">The Space Calculator is 100% accurate. </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Is the space between us accurate?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">"The Space Between Us" may be a science-fiction film, but the science behind the story is a lot more factual than it may seem. The movie tells the story of the first child to be born on Mars, after an astronaut realizes she's pregnant en route to the Red Planet.</div>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+</div>
+</div>
+
+
+<!--accordion-->
+
+    <!--DOWNLOAD-->
+<div class="container" id="download">
+  <p id="down">Just think of a problem and Space Calculator we'll take care of the rest! <br>
+     Download our mobile app now! To infinity and beyond!
+    <br><br><img src="google.png" alt=""> <img src="apple.png" alt="">
+  
+  </p>
+
+</div>
+
+
+<!--footer-->
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque error dignissimos commodi officia est voluptas, eaque possimus ipsum, voluptatibus magni facere accusamus fuga? Quasi a obcaecati error unde necessitatibus ut?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus obcaecati facilis, excepturi est nulla error repellendus, soluta id amet suscipit rerum fugiat facere. Fugit minus facilis atque voluptatibus quos.
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="#">Calculator</a></li>
+          <li><a href="#">Google Play</a></li>
+          <li><a href="#">Apple Store</a></li>
+          <li><a href="#">IOS</a></li>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">Spaceship</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Contribute</a></li>
+          <li><a href="h">Privacy Policy</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; WD20P-SOFTWARECHASERS LAURIO.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+  // This function clear all the values
+  function clearScreen() {
+      document.getElementById("result").value = "";
+  }
+   
+  // This function display values
+  function display(value) {
+      document.getElementById("result").value += value;
+  }
+   
+  // This function evaluates the expression and returns result
+  function calculate() {
+      var p = document.getElementById("result").value;
+      var q = eval(p);
+      document.getElementById("result").value = q;
+  }
+  </script>
+
+
+
+
+
+
+
+
+<script>document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar_top').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+});</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+
+</html>
